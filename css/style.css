@@ -640,16 +640,14 @@ footer p span {
         height: 100%;
     }
 
+    
+
 }
 
 @media (max-width: 767px) {
     .nav {
         flex-wrap: wrap;
         padding: 1rem;
-    }
-    
-    .menu-toggle {
-        display: block;
     }
     
     .nav-links {
@@ -698,6 +696,97 @@ footer p span {
         flex-direction: column;
         justify-content: center;
     }
+
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav .home {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    
+    
+    .hero {
+        min-height: auto;
+    }
+
+    .hero video {
+        height: 50vh;
+    }
+
+    .hero-content {
+        position: relative;
+        margin: 0 auto;
+        transform: none;
+        width: calc(100% - 2rem);
+        max-width: none;
+        bottom: auto;
+        left: auto;
+        margin-top: -3rem;
+        margin-bottom: 2rem;
+    }
+
+    .discover-section,
+    .events-section,
+    .treasures-section,
+    .contactus-section {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "discover"
+            "map"
+            "callout";
+    }
+
+    #map {
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .card,
+    .treasure-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-img,
+    .treasure-img {
+        grid-column: 1;
+        grid-row: auto;
+        height: 200px;
+    }
+
+    .contactus-content {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .contacts .socials {
+        justify-content: center;
+    }
+
+
 }
 
     a:focus,
@@ -708,6 +797,7 @@ footer p span {
         outline: 2px solid var(--primary-color);
         outline-offset: 2px;
 }
+
 
 
 
