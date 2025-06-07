@@ -163,7 +163,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 50px 100px;
-  background: linear-gradient(90deg,#222222, #535353, #222222);
+  background: linear-gradient(90deg,#555, #535353, #555);
 }
 
 .religion-card {
